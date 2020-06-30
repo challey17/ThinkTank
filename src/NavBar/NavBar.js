@@ -6,10 +6,10 @@ export default function NavBar() {
   return (
     <div className="navbar">
       <h1>ThinkTank</h1>
-      <Link to={`/home`} className="navlinks">
+      <Link to={`/home`} className=" button navlinks">
         Home
       </Link>
-      <Link to={`/`} className="navlinks">
+      <Link to={`/`} className=" button navlinks">
         {" "}
         Logout
       </Link>

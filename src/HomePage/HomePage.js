@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./HomePage.css";
 import Navbar from "../NavBar/NavBar";
+import { Link } from "react-router-dom";
 
 // CreateDeck and DeckList components will live here
 export default class HomePage extends Component {
@@ -14,15 +15,17 @@ export default class HomePage extends Component {
           <header>
             <h1>Home Page</h1>
           </header>
+          <section className="deck-display-container">
+            <Link to={"/createdeck"} className="create-new-deck">
+              create new deck
+            </Link>
 
-          <div className="create-deck-icon">
-            <button>create new deck</button>
-          </div>
-          <div className="decklist">
-            Deck LIST
-            <h2>placholder deck</h2>
-            <h2>placholder deck</h2>
-          </div>
+            <div className="decklist">
+              Deck LIST
+              <h2>placholder deck</h2>
+              <h2>placholder deck</h2>
+            </div>
+          </section>
         </main>
       </div>
     );
