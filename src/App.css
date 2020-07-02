@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   background-color: lightsteelblue;
   /*display: flex; */
@@ -10,6 +14,14 @@
   height: 100%;
   width: 100%;
 }
+/* landing page*/
+.landing-page {
+  background-color: bisque;
+  margin-top: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 /* nav bar */
 .navbar {
   position: fixed;
@@ -61,4 +73,9 @@ header {
 .decklist h2 {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* study cards page */
+.cards-display-container {
+  background-color: mintcream;
 }

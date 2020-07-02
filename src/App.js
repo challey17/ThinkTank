@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import LandingPage from "./LandingPage/LandingPage";
 import SignupForm from "./SignupForm/SignupForm";
 import LoginForm from "./LoginForm/LoginForm";
+import Cards from "./Cards/Cards";
 import "./App.css";
 import Homepage from "./HomePage/HomePage";
 import CreateDeckForm from "./CreateDeckForm/CreateDeckForm";
@@ -15,6 +16,7 @@ function App() {
       <Route exact path="/signup" component={SignupForm} />
       <Route exact path="/login" component={LoginForm} />
       <Route exact path="/createdeck" component={CreateDeckForm} />
+      <Route exact path="/exampledeck" component={Cards} />
     </main>
   );
 }
