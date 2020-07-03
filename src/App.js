@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+
 import { Route } from "react-router-dom";
 import LandingPage from "./LandingPage/LandingPage";
 import SignupForm from "./SignupForm/SignupForm";
@@ -7,23 +8,27 @@ import Cards from "./Cards/Cards";
 import "./App.css";
 import Homepage from "./HomePage/HomePage";
 import CreateDeckForm from "./CreateDeckForm/CreateDeckForm";
-import decks from "./STORE";
+import data from "./STORE";
 // how to set up routes for landing page and home?
-function App() {
-  //how can I structure data???
-  console.log(decks[0].title);
-  console.log(decks[1].cards);
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { data };
+  }
 
-  return (
-    <main className="App">
-      <Route exact path="/" component={LandingPage} />
-      <Route exat path="/home" component={Homepage} />
-      <Route exact path="/signup" component={SignupForm} />
-      <Route exact path="/login" component={LoginForm} />
-      <Route exact path="/createdeck" component={CreateDeckForm} />
-      <Route exact path="/exampledeck" component={Cards} />
-    </main>
-  );
+  render() {
+    console.log(data.cards[2].question);
+    return (
+      <main className="App">
+        <Route exact path="/" component={LandingPage} />
+        <Route exat path="/home" component={Homepage} />
+        <Route exact path="/signup" component={SignupForm} />
+        <Route exact path="/login" component={LoginForm} />
+        <Route exact path="/createdeck" component={CreateDeckForm} />
+        <Route exact path="/exampledeck" component={Cards} />
+      </main>
+    );
+  }
 }
 
 export default App;

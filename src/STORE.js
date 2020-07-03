@@ -1,81 +1,74 @@
-const decks = [
+const users = [
   {
     id: 1,
-    title: "decktitle1",
-    cards: [
-      {
-        question: "question1",
-        answer: "answer1",
-      },
-      {
-        question: "question2",
-        answer: "answer2",
-      },
-      {
-        question: "question3",
-        answer: "answer3",
-      },
-    ],
+    username: "userONE",
+    password: "password1",
   },
   {
     id: 2,
-    title: "decktitle2",
-    cards: [
-      {
-        question: "question1",
-        answer: "answer1",
-      },
-      {
-        question: "question2",
-        answer: "answer2",
-      },
-      {
-        question: "question3",
-        answer: "answer3",
-      },
-    ],
+    username: "userTWO",
+    password: "password2",
   },
 ];
 
-export default decks;
+const decks = [
+  {
+    id: 123,
+    userId: 1,
+    deckname: " userONE example deck1",
+  },
+  {
+    id: 1234,
+    userId: 2,
+    deckname: " userTWO example deck1",
+  },
+  {
+    id: 12345,
+    userId: 1,
+    deckname: " userONE example deck2",
+  },
+  {
+    id: 123456,
+    userId: 1,
+    deckname: "userONE example deck3",
+  },
+];
 
-/////got errors here, deck1, deck2 undefined
-// const data = [
-//     deck1 : {
-//       id: 1,
-//       title: "decktitle",
-//       cards: [
-//         {
-//           question: "question1",
-//           answer: "answer1",
-//         },
-//         {
-//           question: "question2",
-//           answer: "answer2",
-//         },
-//         {
-//           question: "question3",
-//           answer: "answer3",
-//         },
-//     ],
-//     },
+const cards = [
+  {
+    id: 20,
+    deckId: 12345,
+    question: "question number one",
+    answer: "answer number one",
+  },
+  {
+    id: 21,
+    deckId: 12345,
+    question: "question number two",
+    answer: "answer number two",
+  },
+  {
+    id: 22,
+    deckId: 12345,
+    question:
+      "question number three Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
+    answer: "answer number three",
+  },
+  {
+    id: 23,
+    deckId: 12345,
+    question: "question number four",
+    answer:
+      "answer number four Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  },
+  {
+    id: 24,
+    deckId: 12345,
+    question: "question number five",
+    answer: "answer number five",
+  },
+];
 
-//     deck2: {
-//       id: 2,
-//       title: "decktitle2",
-//       cards: [
-//         {
-//           question: "question1",
-//           answer: "answer1",
-//         },
-//         {
-//           question: "question2",
-//           answer: "answer2",
-//         },
-//         {
-//           question: "question3",
-//           answer: "answer3",
-//         },
-//       ],
-//     },
-//   ];
+const data = { users, decks, cards };
+
+export default data;
