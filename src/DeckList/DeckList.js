@@ -3,12 +3,11 @@ import Deck from "../Deck/Deck";
 
 export default class DeckList extends React.Component {
   render() {
-    console.log(this.props);
+    //console.log(this.props.data.decks);
+
     return (
       <div>
-        <Deck props={this.props} />
-        <Deck props={this.props} />
-        <Deck props={this.props} />
+        <Deck data={this.props.data} />
       </div>
     );
   }

@@ -18,11 +18,6 @@ class App extends Component {
     this.state = { data };
   }
 
-  // <Route
-  // path='/articles'
-  // render={props => <Article user={user} />}
-  // />
-
   render() {
     //console.log(data.cards[2].question);
     return (
@@ -31,12 +26,16 @@ class App extends Component {
         <Route
           exact
           path="/home"
-          render={(props) => <Homepage decks={data.decks} />}
+          render={(props) => <Homepage data={data} />}
         />
         <Route exact path="/signup" component={SignupForm} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/createdeck" component={CreateDeckForm} />
-        <Route exact path="/exampledeck" component={Cards} />
+        <Route
+          exact
+          path="/exampledeck"
+          render={(props) => <Cards data={data} />}
+        />
       </main>
     );
   }
