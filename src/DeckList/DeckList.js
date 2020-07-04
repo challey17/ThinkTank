@@ -1,12 +1,15 @@
 import React from "react";
 import Deck from "../Deck/Deck";
 
-export default function DeckList() {
-  return (
-    <div>
-      <Deck />
-      <Deck />
-      <Deck />
-    </div>
-  );
+export default class DeckList extends React.Component {
+  render() {
+    console.log(this.props);
+    return (
+      <div>
+        <Deck props={this.props} />
+        <Deck props={this.props} />
+        <Deck props={this.props} />
+      </div>
+    );
+  }
 }

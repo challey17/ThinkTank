@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // CreateDeck and DeckList components will live here
 export default class HomePage extends Component {
   render() {
+    console.log(this.props);
     return (
       <div>
         <nav>
@@ -22,7 +23,7 @@ export default class HomePage extends Component {
             </Link>
 
             <div className="decklist">
-              <DeckList />
+              <DeckList props={this.props} />
             </div>
           </section>
         </main>
