@@ -82,6 +82,10 @@ header {
 
 /* edit deck /create deck form */
 
+.edit-deck-page {
+  padding-top: 100px;
+}
+
 .card-input-field {
   display: flex;
   flex-direction: column;
