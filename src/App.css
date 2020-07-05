@@ -79,3 +79,23 @@ header {
 .cards-display-container {
   background-color: mintcream;
 }
+
+/* edit deck /create deck form */
+
+.card-input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-q-a {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.card-q-a label {
+  padding: 5px;
+}

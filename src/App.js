@@ -7,8 +7,8 @@ import LoginForm from "./LoginForm/LoginForm";
 import Cards from "./Cards/Cards";
 import "./App.css";
 import Homepage from "./HomePage/HomePage";
-import CreateDeckForm from "./CreateDeckForm/CreateDeckForm";
 import data from "./STORE";
+import EditDeckPage from "./EditDeck/EditDeckPage";
 ////TODO:
 // pass state down to homepage, decks, cards
 // set up login, sign up
@@ -30,7 +30,7 @@ class App extends Component {
         />
         <Route exact path="/signup" component={SignupForm} />
         <Route exact path="/login" component={LoginForm} />
-        <Route exact path="/createdeck" component={CreateDeckForm} />
+        <Route exact path="/editdeck" component={EditDeckPage} />
         <Route
           exact
           path="/exampledeck"
