@@ -69,6 +69,8 @@ const cards = [
   },
 ];
 
-const data = { users, decks, cards };
+let currentDeck = {};
+
+const data = { users, decks, cards, currentDeck };
 
 export default data;

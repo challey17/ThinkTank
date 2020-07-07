@@ -9,9 +9,8 @@ import "./App.css";
 import Homepage from "./HomePage/HomePage";
 import data from "./STORE";
 import EditDeckPage from "./EditDeck/EditDeckPage";
-////TODO:
-// pass state down to homepage, decks, cards
-// set up login, sign up
+// should state live in app component or homepage?
+
 class App extends Component {
   constructor(props) {
     super(props);

@@ -10,10 +10,10 @@ export default class Deck extends React.Component {
       (user) => user.userId === currentUserId
     );
     //console.log(currentUserDecks);
-
+    //bind click event, userdeck.id create variable currentdeckname
     const decksDisplayed = currentUserDecks.map((userdeck) => (
       <div key={userdeck.id} className="userdeck-container">
-        <Link to={"/exampledeck"} className="card-deck">
+        <Link to={"/exampledeck?id=" + userdeck.id} className="card-deck">
           <h1> {userdeck.deckname} </h1>
         </Link>
       </div>
