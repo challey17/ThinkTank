@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
-import queryString from "query-string";
+//import queryString from "query-string";
 
 export default class Cards extends React.Component {
   constructor(props) {

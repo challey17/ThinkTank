@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
-
+////THIS IS THE ONLY COMPONENT THAT WILL UPDATE STATE//
 //input for deckname, question/front, answer/back
 // not sure if i should use textarea or input for question, answer
 
