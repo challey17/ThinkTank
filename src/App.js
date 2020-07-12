@@ -32,8 +32,8 @@ class App extends Component {
         <Route exact path="/editdeck" component={EditDeckPage} />
         <Route
           exact
-          path="/exampledeck"
-          render={(props) => <Cards data={data} />}
+          path="/exampledeck/:id"
+          render={(props) => <Cards data={data} {...props} />}
         />
       </main>
     );

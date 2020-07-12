@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../NavBar/NavBar";
-//import queryString from "query-string";
 
 export default class Cards extends React.Component {
   constructor(props) {
@@ -9,14 +8,12 @@ export default class Cards extends React.Component {
   }
 
   render() {
-    console.log(this.props.location.search, "props for cards");
-
-    const currentDeckId = 12345;
+    console.log(parseInt(this.props.match.params.id));
+    const currentDeckId = parseInt(this.props.match.params.id);
     const cardsInThisDeck = this.props.data.cards.filter(
       (cards) => cards.deckId === currentDeckId
     );
 
-    console.log(cardsInThisDeck);
     ////NOT SURE IF I SHOULD DO IT THIS WAY
     ///HOW CAN I DISPLAY THEM ONE AT A TIME
     // WITH THE INDEX FROM ARRAY? onClick i++ for forward
@@ -32,16 +29,9 @@ export default class Cards extends React.Component {
 
     console.log(currentDeckId.valueOf());
 
-    // this is just hardcoded, needs logic
-    //2 array methods, filter
-    //const currentDeckname = this.props.data.decks[2].deckname;
-
     const currentDeckname = this.props.data.decks.filter(
       (deckname) => deckname.id === currentDeckId.valueOf()
     );
-    // console.log(this.props.data.decks(...decks).id);
-    console.log(currentDeckname);
-    //console.log(this.props.data.decks.id);
     return (
       <div>
         <nav>
