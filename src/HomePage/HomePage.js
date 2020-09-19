@@ -4,15 +4,8 @@ import DeckList from "../DeckList/DeckList";
 import Navbar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
 
-// CreateDeck and DeckList components will live here
 export default class HomePage extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {};
-  // }
-
   render() {
-    //console.log(this.props.data.decks);
     return (
       <div>
         <nav>

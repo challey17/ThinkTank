@@ -69,6 +69,17 @@ const cards = [
   },
 ];
 
+const progress = [
+  {
+    id: 1,
+    user_id: 2,
+    deck_id: 12345,
+    card_id: 23,
+    difficulty: 0,
+    modified: "blah",
+  },
+];
+
 let currentDeck = {};
 
 const data = { users, decks, cards, currentDeck };
